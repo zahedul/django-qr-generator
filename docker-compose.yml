@@ -3,7 +3,7 @@ version: "3"
 
 services:
   qrgenerator:
-    hostname: appserver
+    hostname: qrgenerator
     build: 
       context: .
     image: qrgenerator

@@ -8,7 +8,7 @@ COPY ./Pipfile* /tmp/
 RUN apt-get update && apt-get install -y
 RUN apt-get install -y gcc libc-dev
 RUN pip install pipenv
-RUN cd /tmp && pipenv install
+RUN cd /tmp && pipenv install --system
 
 RUN apt-get clean
 RUN rm -f /var/lib/apt/list/*
