@@ -17,7 +17,8 @@ RUN mkdir /src
 WORKDIR /src
 COPY ./src /src
 
-# RUN mkdir -p /src/media
-# RUN mkdir -p /src/static
-# RUN mkdir -p /var/log/app
-# RUN chmod -R 755 /var/log/app
+
+RUN mkdir -p /src/media
+RUN mkdir -p /src/static
+RUN mkdir -p /var/log/app
+RUN chmod -R 755 /var/log/app
